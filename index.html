@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechShop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+  <div class="main">
+    <header class="header">
+      <div class="grid wide">
+        <nav class="nav hide-on-mobile-tablet">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--has-qr nav__item--separate">
+              Vào cửa hàng trên ứng dụng TechShop
+              
+              <div class="nav__qr">
+                <img src="./assets/img/qr_code.png" width="100%" alt="QR code">
+                <div class="nav__qr-apps">
+                  <a href="" class="nav__qr-link">
+                    <img src="./assets/img/google_play.png" height="16px" alt="Google Play">
+                  </a>
+                  <a href="" class="nav__qr-link">
+                    <img src="./assets/img/app_store.png" height="16px" alt="App Store">
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav__item">
+              Kết nối
+              <a href="" class="nav__link">
+                <i class="nav__icon fab fa-facebook-square"></i>
+              </a>
+              <a href="" class="nav__link">
+                <i class="nav__icon fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        
+          <ul class="nav__list">
+            <li class="nav__item nav__item--has-notify">
+              <a href="" class="nav__link">
+                <i class="nav__icon far fa-bell"></i>
+                Thông báo
+              </a>
+              
+              <div class="notify">
+                <h3 class="notify__header">Thông báo mới nhận</h3>
+                <ul class="notify__list">
+                  <li class="notify__item notify__item--viewed">
+                    <a href="" class="notify__link">
+                      <img src="https://cf.shopee.vn/file/b4bde225699c9bcca18a0d118ea6efde" class="notify__img" alt="">
+                      <div class="notify__info">
+                        <span class="notify__name">Tháng tư vui vẻ - Giá rẻ sập sàn</span>
+                        <span class="notify__desc">Ưu đãi từ ngày 1 - 30/4</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notify__item">
+                    <a href="" class="notify__link">
+                      <img src="https://cf.shopee.vn/file/d659f4ee5e9b71b269f85f29997471c3" class="notify__img" alt="">
+                      <div class="notify__info">
+                        <span class="notify__name">Siêu SALE đốn tim</span>
+                        <span class="notify__desc">Giảm đến 50% - Quà tặng 9tr</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notify__item">
+                    <a href="" class="notify__link">
+                      <img src="https://cf.shopee.vn/file/9ce0fca1d9cb428f9f830e2f5afc490b" class="notify__img" alt="">
+                      <div class="notify__info">
+                        <span class="notify__name">Giá rẻ sập sàn - Chẳng ngại săn deal</span>
+                        <span class="notify__desc">Ưu đãi từ ngày 12 - 13/4</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                
+                <a href="" class="notify__btn">Xem tất cả</a>
+              </div>
+            </li>
+
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                <i class="nav__icon far fa-question-circle"></i>
+                Trợ giúp
+              </a>
+            </li>
+            <li id="sign-up-btn" class="nav__item nav__item--separate">
+              <span class="nav__link nav__link--strong">Đăng ký</span>
+            </li>
+            <li id="log-in-btn" class="nav__item">
+              <span class="nav__link nav__link--strong">Đăng nhập</span>
+            </li>
+            <!-- <li class="nav__item user">
+              <img src="./assets/img/rubik3x3.png" class="user__img" alt="">
+              <span class="user__name">Gia Trung</span>
+
+              <ul class="user__menu">
+                <li class="user__item">
+                  <a href="" class="user__link">Tài khoản</a>
+                </li>
+                <li class="user__item">
+                  <a href="" class="user__link">Địa chỉ</a>
+                </li>
+                <li class="user__item">
+                  <a href="" class="user__link">Đơn mua</a>
+                </li>
+                <li class="user__item">
+                  <a href="" class="user__link">Đăng xuất</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </nav>
+
+        <div class="header-with-search">
+          <label for="mobile-search-checkbox" class="mobile-search">
+            <i class="mobile-search__icon fas fa-search"></i>
+          </label>
+
+          <div class="logo hide-on-tablet">
+            <a href="/">
+              <img src="https://www.brandbucket.com/sites/default/files/logo_uploads/325327/large_techshop.io.png" class="logo__img" alt="">
+            </a>
+          </div>
+
+          <input type="checkbox" hidden id="mobile-search-checkbox">
+
+          <div class="search hide-on-mobile">
+            <div class="search__input-wrap">
+              <input type="text" class="search__input" placeholder="Tìm kiếm...">
+              
+              <div class="search__history">
+                <h3 class="search__heading">Lịch sử tìm kiếm</h3>
+                <ul class="search__list">
+                  <li class="search__item">
+                    <a href="" class="search__link">iphone 12</a>
+                  </li>
+                  <li class="search__item">
+                    <a href="" class="search__link">iphone 11</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="search__select">
+              <span class="search__select-label">Trong shop</span>
+              <i class="search__select-icon fas fa-angle-down"></i>
+
+              <ul class="search__option">
+                <li class="search__option-item">
+                  <span class="search__option-label">Trong shop</span>
+                  <i class="search__option-icon search__option-icon--active fas fa-check"></i>
+                </li>
+                <li class="search__option-item">
+                  <span class="search__option-label">Ngoài shop</span>
+                  <i class="search__option-icon fas fa-check"></i>
+                </li>
+              </ul>
+            </div>
+            <button class="search__btn">
+              <i class="search__btn-icon fas fa-search"></i>
+            </button>
+          </div>
+
+          <div class="cart">
+            <div class="cart__wrap">
+              <i class="cart__icon fas fa-shopping-cart"></i>
+              <span class="cart__notice">2</span>
+
+              <!-- No cart: cart__container--no-cart -->
+              <div class="cart__container">
+                <img src="./assets/img/no_cart.png" class="cart__container-no-cart-img" alt="">
+                <span class="cart__container-no-cart-msg">Chưa có sản phẩm</span>
+              
+                <h4 class="cart__heading">Sản phẩm đã thêm</h4>
+                <ul class="cart__list">
+                  <li class="cart__item">
+                    <img src="https://cf.shopee.vn/file/2dd923298ba0685a2288af4ae443c51c_tn" class="cart__item-img" alt="">
+                    <div class="cart__item-info">
+                      <div class="cart__item-head">
+                        <h5 class="cart__item-name">iPhone 12 Pro Max 256GB</h5>
+                        <div class="cart__item-price-wrap">
+                          <span class="cart__item-price">32.750.000đ</span>
+                          <span class="cart__item-multiply">x</span>
+                          <span class="cart__item-quantiy">1</span>
+                        </div>
+                      </div>
+                      <div class="cart__item-body">Apple</span>
+                        <span class="cart__item-remove">Xoá</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart__item">
+                    <img src="https://cf.shopee.vn/file/b107f2e6167adb250100ec4c8d028a57_tn" class="cart__item-img" alt="">
+                    <div class="cart__item-info">
+                      <div class="cart__item-head">
+                        <h5 class="cart__item-name">iPhone 11 64GB</h5>
+                        <div class="cart__item-price-wrap">
+                          <span class="cart__item-price">15.890.000đ</span>
+                          <span class="cart__item-multiply">x</span>
+                          <span class="cart__item-quantiy">1</span>
+                        </div>
+                      </div>
+                      <div class="cart__item-body">
+                        <span class="cart__item-desc">Apple</span>
+                        <span class="cart__item-remove">Xoá</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <a href="" class="cart__item-view btn btn--primary">Xem giỏ hàng</a>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+
+      <ul class="header__sort-bar">
+        <li class="header__sort-item">
+          <a href="" class="header__sort-link">Liên quan</a>
+        </li>
+        <li class="header__sort-item header__sort-item--active">
+          <a href="" class="header__sort-link">Mới nhất</a>
+        </li>
+        <li class="header__sort-item">
+          <a href="" class="header__sort-link">Bán chạy</a>
+        </li>
+        <li class="header__sort-item">
+          <a href="" class="header__sort-link">Giá</a>
+        </li>
+      </ul>
+    </header>
+
+    <article class="article">
+      <div class="grid wide">
+        <div class="row sm-gutter article__content">
+          <div class="col l-2 m-0 c-0">
+            <aside class="category">
+              <h3 class="category__heading">Danh mục</h3>
+              <ul class="category__list">
+                <li class="category__item category__item--active">
+                  <a href="" class="category__link">Apple</a>
+                </li>
+                <li class="category__item">
+                  <a href="" class="category__link">Samsung</a>
+                </li>
+                <li class="category__item">
+                  <a href="" class="category__link">Xiaomi</a>
+                </li>
+                <li class="category__item">
+                  <a href="" class="category__link">Huawei</a>
+                </li>
+                <li class="category__item">
+                  <a href="" class="category__link">Vivo</a>
+                </li>
+                <li class="category__item">
+                  <a href="" class="category__link">Oppo</a>
+                </li>
+                <li class="category__item">
+                  <a href="" class="category__link">Vsmart</a>
+                </li>
+                <li class="category__item">
+                  <a href="" class="category__link">Realme</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="col l-10 m-12 c-12">
+            <div class="home-filter hide-on-mobile-tablet">
+              <span class="home-filter__label">Sắp xếp theo</span>
+              <button class="home-filter__btn btn btn--primary">Phổ biến</button>
+              <button class="home-filter__btn btn">Mới nhất</button>
+              <button class="home-filter__btn btn">Bán chạy</button>
+              <div class="home-filter__select">
+                Giá<i class="home-filter__icon fas fa-angle-down"></i>
+
+                <ul class="home-filter__option">
+                  <li class="home-filter__option-item">
+                    <a href="" class="home-filter__option-link">Giá: Thấp đến cao</a>
+                  </li>
+                  <li class="home-filter__option-item">
+                    <a href="" class="home-filter__option-link">Giá: Cao đến thấp</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="page">
+                <span class="page__num">
+                  <span class="page__num-current">1</span>/14
+                </span>
+                <div class="page__ctrl">
+                  <a href="" class="page__btn page__btn--disabled">
+                    <i class="page__icon fas fa-angle-left"></i>
+                  </a>
+                  <a href="" class="page__btn">
+                    <i class="page__icon fas fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <nav class="mobile-category">
+              <ul class="mobile-category__list">
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Apple</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Samsung</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Xiaomi</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Huawei</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Vivo</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Oppo</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Vsmart</a>
+                </li>
+                <li class="mobile-category__item">
+                  <a href="" class="mobile-category__link">Realme</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="home-product">
+              <div class="row sm-gutter">
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/2dd923298ba0685a2288af4ae443c51c_tn)"></div>
+                    <h4 class="product__name">iPhone 12 Pro Max 128GB</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">33.990.000đ</span>
+                      <span class="product__price-new">28.790.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 742 </span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">15%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/2dd923298ba0685a2288af4ae443c51c_tn)"></div>
+                    <h4 class="product__name">iPhone 12 Pro Max 256GB</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">37.990.000đ</span>
+                      <span class="product__price-new">32.750.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 394 </span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">14%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/ee36c328b153eb692a2b10b330602dbd_tn)"></div>
+                    <h4 class="product__name">iPhone 12 Pro 128GB</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">30.990.000đ</span>
+                      <span class="product__price-new">27.390.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 275</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">12%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/983dd04b59aadc1e157827acec098ed2_tn)"></div>
+                    <h4 class="product__name">iPhone 12 64GB</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">24.990.000đ</span>
+                      <span class="product__price-new">20.390.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 663</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">18%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/b107f2e6167adb250100ec4c8d028a57_tn)"></div>
+                    <h4 class="product__name">iPhone 11 64GB</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">21.990.000đ</span>
+                      <span class="product__price-new">15.890.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 522</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">28%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/877854082b2d5896b3f7c3107b61bb04_tn)"></div>
+                    <h4 class="product__name">[Hàng chính hãng VN/A] iPhone 12 64GB - Hàng new 100%</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">25.990.000đ</span>
+                      <span class="product__price-new">22.770.00đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 345</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>Hà Nội</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">12%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/7721e82ef42762434e347ee188f583ec_tn)"></div>
+                    <h4 class="product__name">iPhone 12 Pro Max 128GB</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">39.590.000đ</span>
+                      <span class="product__price-new">30.980.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 174</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">22%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/11c1285e68e4e288a834797444a2dd5e_tn)"></div>
+                    <h4 class="product__name">iPhone 11 64GB bản VN Chính hãng (1 Sim vật lý,1 Esim)</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">19.800.000đ</span>
+                      <span class="product__price-new">16.599.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 249</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">16%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/0ba79c0ff40bd120ef0ef65867391888_tn)"></div>
+                    <h4 class="product__name">iPhone 12 64GB 5G - Hàng chính hãng</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">24.500.000đ</span>
+                      <span class="product__price-new">21.050.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 33</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>Hà Nội</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">14%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="" class="product">
+                    <div class="product__img" style="background-image: url(https://cf.shopee.vn/file/11c1285e68e4e288a834797444a2dd5e_tn)"></div>
+                    <h4 class="product__name">iPhone 11 VN/A 64GB - BH 12 THÁNG CHÍNH HÃNG</h4>
+                    <div class="product__price">
+                      <span class="product__price-old">21.500.000đ</span>
+                      <span class="product__price-new">16.590.000đ</span>
+                    </div>
+                    <div class="product__action">
+                      <span class="product__like product__like--liked">
+                        <i class="product__like-icon-empty far fa-heart"></i>
+                        <i class="product__like-icon-fill fas fa-heart"></i>
+                      </span>
+
+                      <div class="product__rating">
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                        <i class="product__star-gold fas fa-star"></i>
+                      </div>
+                      <span class="product__sold">Đã bán 603</span>
+                    </div>
+                    <div class="product__origin">
+                      <span>Apple</span><span>Hà Nội</span>
+                    </div>
+                    <div class="product__favorite">
+                      <i class="product__favorite-icon fas fa-check"></i>
+                      <span class="product__favorite-label">Yêu thích</span>
+                    </div>
+                    <div class="product__sale-off">
+                      <span class="product__sale-off-percent">23%</span>
+                      <span class="product__sale-off-label">GIẢM</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a href="" class="pagination__link">
+                  <i class="fas fa-angle-left"></i>
+                </a>
+              </li>
+              <li class="pagination__item pagination__item--active">
+                <a href="" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">4</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">5</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">...</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">14</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="grid wide footer__content">
+        <div class="row">
+          <div class="col l-2-4 m-4 c-6">
+            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Trung tâm trợ giúp</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">TechShop Mall</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Hướng dẫn mua hàng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <h3 class="footer__heading">Về TechShop</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Giới thiệu</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Tuyển dụng</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Điều khoản</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <h3 class="footer__heading">Danh mục</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Apple</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Samsung</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Xiaomi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <h3 class="footer__heading">Theo dõi</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__item-link">
+                  <i class="footer__icon fab fa-facebook-square"></i>Facebook
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">
+                  <i class="footer__icon fab fa-instagram"></i>Instagram
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">
+                  <i class="footer__icon fab fa-linkedin"></i>Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l-2-4 m-8 c-12">
+            <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+            <div class="footer__download">
+              <img src="./assets/img/qr_code.png" alt="QR code" class="footer__qr">
+              <div class="footer__apps">
+                <a href="" class="footer__apps-link">
+                  <img src="./assets/img/app_store.png" class="footer__apps-img" alt="App Store">
+                </a>
+                <a href="" class="footer__apps-link">
+                  <img src="./assets/img/google_play.png" class="footer__apps-img" alt="Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <div class="grid wide">
+          <p class="footer__copyright-text">© 2021 - Bản quyền thuộc về TechShop</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal layout -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__body">
+        <!-- Register form -->
+        <div id="sign-up-form" class="auth">
+          <div class="auth__container">
+            <div class="auth__header">
+              <h3 class="auth__heading">Đăng ký</h3>
+              <span id="switch-to-log-in-btn" class="auth__switch-btn">Đăng nhập</span>
+            </div>
+
+            <div class="auth__form">
+              <div class="auth__group">
+                <input type="email" class="auth__input" placeholder="Email">
+              </div>
+              <div class="auth__group">
+                <input type="password" class="auth__input" placeholder="Mật khẩu">
+              </div>
+              <div class="auth__group">
+                <input type="password" class="auth__input" placeholder="Nhập lại mật khẩu">
+              </div>
+
+              <div class="auth__aside">
+                <p class="auth__commit">
+                  Bằng việc đăng kí, bạn đã đồng ý với TechShop về
+                  <a href="" class="auth__commit-link">Điều khoản dịch vụ</a> & 
+                  <a href="" class="auth__commit-link">Chính sách bảo mật</a>
+                </p>
+              </div>
+
+              <div class="auth__ctrl">
+                <button class="auth__ctrl-back btn">TRỞ LẠI</button>
+                <button class="btn btn--primary">ĐĂNG KÝ</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth__social">
+            <a href="" class="auth__fb btn btn--size-s">
+              <i class="auth__icon fab fa-facebook-square"></i>Kết nối với Facebook 
+            </a>
+            <a href="" class="auth__gg btn btn--size-s">
+              <i class="auth__icon fab fa-google"></i>Kết nối với Google
+            </a>
+          </div>
+        </div>
+
+        <!-- Login form -->
+        <div id="log-in-form" class="auth">
+          <div class="auth__container">
+            <div class="auth__header">
+              <h3 class="auth__heading">Đăng nhập</h3>
+              <span id="switch-to-sign-up-btn" class="auth__switch-btn">Đăng ký</span>
+            </div>
+
+            <div class="auth__form">
+              <div class="auth__group">
+                <input type="email" class="auth__input" placeholder="Email">
+              </div>
+              <div class="auth__group">
+                <input type="password" class="auth__input" placeholder="Mật khẩu">
+              </div>
+
+              <div class="auth__aside">
+                <div class="auth__help">
+                  <a href="" class="auth__help-link auth__help-forgot">Quên mật khẩu</a>
+                  <span class="auth__help-separate"></span>
+                  <a href="" class="auth__help-link">Cần trợ giúp?</a>
+                </div>
+              </div>
+
+              <div class="auth__ctrl">
+                <button class="auth__ctrl-back btn">TRỞ LẠI</button>
+                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth__social">
+            <a href="" class="auth__fb btn btn--size-s">
+              <i class="auth__icon fab fa-facebook-square"></i>Kết nối với Facebook 
+            </a>
+            <a href="" class="auth__gg btn btn--size-s">
+              <i class="auth__icon fab fa-google"></i>Kết nối với Google
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
