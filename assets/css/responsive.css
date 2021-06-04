@@ -32,11 +32,11 @@
     display: flex;
   }
 
-  .article {
+  .container {
     margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
   }
 
-  .article__content {
+  .container__content {
     padding-top: 8px;
   }
 }
@@ -117,18 +117,12 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
 
-  .article__content {
+  .container__content {
     margin: 0 4px;
   }
 
   .pagination__item {
     margin: 0;
-  }
-
-  .pagination__link {
-    --height: 28px;
-    min-width: 36px;
-    font-size: 1.6rem;
   }
 
   .footer__content {
