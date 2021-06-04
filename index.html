@@ -179,10 +179,10 @@
               <i class="cart__icon fas fa-shopping-cart"></i>
               <span class="cart__notice">2</span>
 
-              <!-- No cart: cart__container--no-cart -->
-              <div class="cart__container">
-                <img src="./assets/img/no_cart.png" class="cart__container-no-cart-img" alt="">
-                <span class="cart__container-no-cart-msg">Chưa có sản phẩm</span>
+              <!-- No cart: cart__content--no-cart --> 
+              <div class="cart__content">
+                <img src="./assets/img/no_cart.png" class="cart__content-no-cart-img" alt="">
+                <span class="cart__content-no-cart-msg">Chưa có sản phẩm</span>
               
                 <h4 class="cart__heading">Sản phẩm đã thêm</h4>
                 <ul class="cart__list">
@@ -245,9 +245,9 @@
       </ul>
     </header>
 
-    <article class="article">
+    <div class="container">
       <div class="grid wide">
-        <div class="row sm-gutter article__content">
+        <div class="row sm-gutter container__content">
           <div class="col l-2 m-0 c-0">
             <aside class="category">
               <h3 class="category__heading">Danh mục</h3>
@@ -727,9 +727,6 @@
                 <a href="" class="pagination__link">4</a>
               </li>
               <li class="pagination__item">
-                <a href="" class="pagination__link">5</a>
-              </li>
-              <li class="pagination__item">
                 <a href="" class="pagination__link">...</a>
               </li>
               <li class="pagination__item">
@@ -744,7 +741,7 @@
           </div>
         </div>
       </div>
-    </article>
+    </div>
 
     <footer class="footer">
       <div class="grid wide footer__content">
@@ -842,7 +839,7 @@
       <div class="modal__body">
         <!-- Register form -->
         <div id="sign-up-form" class="auth">
-          <div class="auth__container">
+          <div class="auth__content">
             <div class="auth__header">
               <h3 class="auth__heading">Đăng ký</h3>
               <span id="switch-to-log-in-btn" class="auth__switch-btn">Đăng nhập</span>
@@ -886,7 +883,7 @@
 
         <!-- Login form -->
         <div id="log-in-form" class="auth">
-          <div class="auth__container">
+          <div class="auth__content">
             <div class="auth__header">
               <h3 class="auth__heading">Đăng nhập</h3>
               <span id="switch-to-sign-up-btn" class="auth__switch-btn">Đăng ký</span>
