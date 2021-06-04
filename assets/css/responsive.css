@@ -12,7 +12,7 @@
     z-index: 10;
   }
 
-  .cart__container {
+  .cart__content {
     padding: 0 calc((100% - 644px) / 2);
     position: fixed;
     top: var(--header-height);
@@ -20,7 +20,7 @@
     width: 100%;
   }
 
-  .cart__container::after {
+  .cart__content::after {
     display: none;
   }
 
