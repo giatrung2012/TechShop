@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: >1%,last 2 versions
+*/
+
 /* Mobile & Tablet */
 @media (max-width: 63.9375em) {
   .hide-on-mobile-tablet {
@@ -25,10 +32,14 @@
   }
 
   .header__sort-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .mobile-category__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -44,7 +55,7 @@
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   :root {
-    --header-height: 68px; 
+    --header-height: 68px;
     --nav-height: 0px;
   }
 
@@ -61,7 +72,7 @@
 /* Mobile */
 @media (max-width: 46.1875em) {
   :root {
-    --header-height: 54px; 
+    --header-height: 54px;
     --nav-height: 0px;
   }
 
@@ -70,10 +81,13 @@
   }
 
   .header-with-search {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  .logo, .cart {
+  .logo,
+  .cart {
     width: unset;
   }
 
@@ -95,8 +109,21 @@
     display: none;
     height: var(--header-sort-bar-height);
     z-index: 1;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-animation: mobileSearchSideIn linear 0.3s;
     animation: mobileSearchSideIn linear 0.3s;
+  }
+
+  @-webkit-keyframes mobileSearchSideIn {
+    from {
+      top: calc(var(--header-height) / 2);
+      opacity: 0;
+    }
+    to {
+      top: var(--header-height);
+      opacity: 1;
+    }
   }
 
   @keyframes mobileSearchSideIn {
@@ -114,6 +141,7 @@
     position: fixed;
     top: calc(var(--header-height) + var(--header-sort-bar-height));
     width: 100%;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
 
@@ -133,12 +161,16 @@
     text-align: center;
   }
 
-  .footer__item-link, 
+  .footer__item-link,
   .footer__download {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
   .footer__apps {
+    -webkit-box-flex: unset;
+    -ms-flex: unset;
     flex: unset;
   }
 
@@ -147,4 +179,3 @@
     display: block;
   }
 }
-
