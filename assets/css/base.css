@@ -1,182 +1,229 @@
-:root {
-	--primary-color: #ee4d2d;
-	--white-color: #fff;
-	--black-color: #000;
-	--text-color: #333;
-	--border-color: #dbdbdb;
-	--star-gold-color: #ffce3e;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: >1%,last 2 versions
+*/
 
-	--header-height: 120px;
-	--nav-height: 34px;
-	--header-with-search-height: calc(var(--header-height) - var(--nav-height));
-	--header-sort-bar-height: 46px;
+:root {
+  --primary-color: #ee4d2d;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --border-color: #dbdbdb;
+  --star-gold-color: #ffce3e;
+
+  --header-height: 120px;
+  --nav-height: 34px;
+  --header-with-search-height: calc(var(--header-height) - var(--nav-height));
+  --header-sort-bar-height: 46px;
 }
 
 * {
-	box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	font-size: 62.5%;
-	line-height: 2.56rem;
-	font-family: 'Roboto', sans-serif;
-	box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 2.4;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Responsive */
 .grid {
-	width: 1200px;
-	max-width: 100%;
-	margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .grid__row {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -5px;
 }
 
 /* Test */
 .grid__column-2 {
-	padding: 0 5px;
-	width: 16.66666%;
+  padding: 0 5px;
+  width: 16.66666%;
 }
 
 .grid__column-2-4 {
-	/* 2.4 column */
-	padding: 0 5px;
-	width: 20%;
+  /* 2.4 column */
+  padding: 0 5px;
+  width: 20%;
 }
 
 .grid__column-10 {
-	padding: 0 5px;
-	width: 83.33333%;
+  padding: 0 5px;
+  width: 83.33333%;
 }
 
 /* Animation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes growth {
+  from {
+    -webkit-transform: scale(var(--growth-from));
+    transform: scale(var(--growth-from));
+  }
+  to {
+    -webkit-transform: scale(var(--growth-to));
+    transform: scale(var(--growth-to));
+  }
 }
 
 @keyframes growth {
-	from {
-		transform: scale(var(--growth-from));
-	}
-	to {
-		transform: scale(var(--growth-to));
-	}
+  from {
+    -webkit-transform: scale(var(--growth-from));
+    transform: scale(var(--growth-from));
+  }
+  to {
+    -webkit-transform: scale(var(--growth-to));
+    transform: scale(var(--growth-to));
+  }
 }
 
 /* Fonts */
 .fa-google {
-	background: linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0
-			25%/48% 40%,
-		linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%,
-		linear-gradient(-40deg, transparent 53%, #ea4335 54%),
-		linear-gradient(45deg, transparent 46%, #4285f4 48%), #34a853;
-	background-repeat: no-repeat;
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0
+      25%/48% 40%,
+    linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%,
+    linear-gradient(-40deg, transparent 53%, #ea4335 54%),
+    linear-gradient(45deg, transparent 46%, #4285f4 48%), #34a853;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Button */
 .btn {
-	border: none;
-	border-radius: 2px;
-	padding: 0 12px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	min-width: 124px;
-	height: 34px;
-	color: var(--text-color);
-	background-color: var(--white-color);
-	font-size: 1.5rem;
-	text-decoration: none;
-	cursor: pointer;
-	outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 0 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 124px;
+  height: 34px;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .btn.btn--primary {
-	color: var(--white-color);
-	background-color: var(--primary-color);
+  color: var(--white-color);
+  background-color: var(--primary-color);
 }
 
 .btn--size-s {
-	padding-right: 40px;
-	padding-left: 8px;
-	height: 32px;
-	font-size: 1.2rem;
+  padding-right: 40px;
+  padding-left: 8px;
+  height: 32px;
+  font-size: 1.2rem;
 }
 
 /* Pagination */
 .pagination {
-	margin: 48px 0 32px 0;
-	padding-left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
+  margin: 48px 0 32px 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
 }
 
 .pagination__item {
-	margin: 0 12px;
+  margin: 0 12px;
 }
 
 .pagination__item--active .pagination__link {
-	color: var(--white-color);
-	background-color: var(--primary-color);
+  color: var(--white-color);
+  background-color: var(--primary-color);
 }
 
 .pagination__item--active:hover .pagination__link {
-	background-color: #ed5c3f;
+  background-color: #ed5c3f;
 }
 
 .pagination__link {
-	border-radius: 2px;
-	display: block;
-	min-width: 40px;
-	height: 30px;
-	line-height: 30px;
-	font-size: 2rem;
-	font-weight: 300;
-	color: #939393;
-	text-decoration: none;
-	text-align: center;
+  border-radius: 2px;
+  display: block;
+  min-width: 40px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #939393;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* Authentication modal */
 .modal {
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 3;
-	animation: fadeIn linear 0.1s;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  -webkit-animation: fadeIn linear 0.1s;
+  animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal__body {
-	margin: auto;
-	position: relative;
-	z-index: 4;
-	animation: growth linear 0.1s;
-	will-change: transform;
-	--growth-from: 0.7;
-	--growth-to: 1;
+  margin: auto;
+  position: relative;
+  z-index: 4;
+  -webkit-animation: growth linear 0.1s;
+  animation: growth linear 0.1s;
+  will-change: transform;
+  --growth-from: 0.7;
+  --growth-to: 1;
 }
